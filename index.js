@@ -79,3 +79,12 @@ console.log(cloneFoodType); //{ vegetables: 'spinach', fruits: 'oranges' }
 
 
 //Question 5
+const presidentialCandidates = {
+    AAC: 'Omoyele Sowore',
+    ACCORD: 'Christopher Imumolen',
+    APC: 'Bola Ahmed Tinubu',
+    LP: 'Peter Obi',
+    NNPP: 'Rabiu Kwankwaso',
+    PDP: 'Atiku Abubakar',
+ }
+ 

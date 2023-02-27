@@ -26,5 +26,29 @@ InstagramPost {
   numberOfViews: 6000
 
   */
+  function createPerson(name, age, location) {
+    return {
+      name: name,
+      age: age,
+      location: location,
+    }
+} 
 
-  
+let Person = createPerson('Musa Dawodu', 19, 'Lagos State');
+console.log(Person);
+
+//{ name: 'Musa Dawodu', age: 19, location: 'Lagos State' } 
+
+function createJambScores(eng, govt, lit, crk) {
+    return {
+      eng: eng,
+      govt: govt,
+      lit: lit,
+      crk: crk,
+    }
+} 
+
+let Score = createJambScores(70, 85, 82, 94 );
+console.log(Score);
+
+//{ eng: 70, govt: 85, lit: 82, crk: 94 }

@@ -74,7 +74,7 @@ const personDetails = {
 let clonedDetails = Object.assign({}, personDetails)
 console.log(clonedDetails) //{ name: 'John Smith', age: 45 }
 
-//Using JSON
+//Using JSON parsing
 const foodType = {
     vegetables: 'spinach', 
     fruits: 'oranges' };

@@ -7,13 +7,10 @@ function InstagramPost (handleOfAuthor, content,imageLinkPostedByAuthor, numberO
     this.numberOfViews=numberOfViews;
 }
 
-let Post1 = new InstagramPost('Mwaka','Life is beautiful','https://www.techexplorist.com/wp-content/uploads/2019/12/happiness.jpg',1029,3000)
-console.log(Post1);
-let Post2 = new InstagramPost('National Geographic', 'African wildlife', 'http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSpU5h6hjPVJAV7GUxnCE1h_XAl09dlDS-pQSUTtSFKAUo_h_muWVy0NRKbmwx9-wqVRS9GALE0CbwEm9Y', 10000, 6000)
-console.log(Post2);
-
 
 //Question 2
+let Post1 = new InstagramPost('Mwaka','Life is beautiful','https://www.techexplorist.com/wp-content/uploads/2019/12/happiness.jpg',1029,3000)
+console.log(Post1);
 /* InstagramPost {
   handleOfAuthor: 'Mwaka',
   content: 'Life is beautiful',
@@ -21,22 +18,28 @@ console.log(Post2);
   numberOfLikes: 1029,
   numberOfViews: 3000
 }
+*/
+
+let Post2 = new InstagramPost('National Geographic', 'African wildlife', 'http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSpU5h6hjPVJAV7GUxnCE1h_XAl09dlDS-pQSUTtSFKAUo_h_muWVy0NRKbmwx9-wqVRS9GALE0CbwEm9Y', 10000, 6000)
+console.log(Post2);
+/*
 InstagramPost {
   handleOfAuthor: 'National Geographic',
   content: 'African wildlife',
   imageLinkPostedByAuthor: 'http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSpU5h6hjPVJAV7GUxnCE1h_XAl09dlDS-pQSUTtSFKAUo_h_muWVy0NRKbmwx9-wqVRS9GALE0CbwEm9Y',
   numberOfLikes: 10000,
   numberOfViews: 6000
-
   */
 
-//Question 3
+
+  //Question 3
 //a)
 function createPerson(name, age, location) {
     return {
       name: name,
       age: age,
       location: location,
+      
     }
 } 
 let Person = createPerson('Musa Dawodu', 19, 'Lagos State')
@@ -71,6 +74,7 @@ const personDetails = {
 let clonedDetails = Object.assign({}, personDetails)
 console.log(clonedDetails) //{ name: 'John Smith', age: 45 }
 
+//Using JSON
 const foodType = {
     vegetables: 'spinach', 
     fruits: 'oranges' };
@@ -87,4 +91,17 @@ const presidentialCandidates = {
     NNPP: 'Rabiu Kwankwaso',
     PDP: 'Atiku Abubakar',
  }
- 
+ for (const key in presidentialCandidates) {
+  if (presidentialCandidates.hasOwnProperty(key)) {
+    console.log(presidentialCandidates[key] + ' is the presidential candidate of ' + key);
+  }
+}
+
+/*
+Omoyele Sowore is the presidential candidate of AAC       
+Christopher Imumolen is the presidential candidate of ACCORD
+Bola Ahmed Tinubu is the presidential candidate of APC    
+Peter Obi is the presidential candidate of LP
+Rabiu Kwankwaso is the presidential candidate of NNPP     
+Atiku Abubakar is the presidential candidate of PDP
+*/
